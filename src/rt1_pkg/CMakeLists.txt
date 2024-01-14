@@ -55,14 +55,14 @@ find_package(catkin REQUIRED COMPONENTS
  add_message_files(
    DIRECTORY msg
    FILES RobotPosVel.msg TargetPos.msg
-# )
+ )
 
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
    LastTarget.srv
    RobotToTarget.srv
-# )
+ )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -74,8 +74,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   std_msgs	actionlib_mgsg	geometry_msgs	nav_msgs
-# )
+   std_msgs	actionlib_msgs	geometry_msgs	nav_msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##

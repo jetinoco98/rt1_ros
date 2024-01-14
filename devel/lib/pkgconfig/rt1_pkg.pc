@@ -1,0 +1,8 @@
+prefix=/root/workspace/devel
+
+Name: rt1_pkg
+Description: Description of rt1_pkg
+Version: 0.0.0
+Cflags: -I/root/workspace/devel/include -I/root/workspace/src/rt1_pkg/include
+Libs: -L${prefix}/lib -lrt1_pkg
+Requires: 

@@ -1,7 +1,6 @@
 ---
-float32 distance_x
-float32 distance_y
+float32 dx
+float32 dy
 float32 distance
 float32 average_vx
 float32 average_vy
-float32 average_v

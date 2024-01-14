@@ -131,7 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/root/workspace/build/gtest/cmake_install.cmake")
-  include("/root/workspace/build/assignment_2_2023-main/cmake_install.cmake")
+  include("/root/workspace/build/rt1_pkg/cmake_install.cmake")
+  include("/root/workspace/build/assignment_2_2023/cmake_install.cmake")
 
 endif()
 

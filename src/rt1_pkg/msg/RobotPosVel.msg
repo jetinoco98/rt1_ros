@@ -1,6 +1,6 @@
 #Position
-float32 pos_x
-float32 pos_y
+float32 x
+float32 y
 #Velocity
-float32 vel_x
-float32 vel_y
+float32 vx
+float32 vy
