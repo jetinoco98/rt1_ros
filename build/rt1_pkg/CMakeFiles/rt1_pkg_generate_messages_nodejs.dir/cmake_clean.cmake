@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/workspace/devel/share/gennodejs/ros/rt1_pkg/msg/Cancel.js"
   "/root/workspace/devel/share/gennodejs/ros/rt1_pkg/msg/RobotPosVel.js"
   "/root/workspace/devel/share/gennodejs/ros/rt1_pkg/msg/TargetPos.js"
   "/root/workspace/devel/share/gennodejs/ros/rt1_pkg/srv/LastTarget.js"

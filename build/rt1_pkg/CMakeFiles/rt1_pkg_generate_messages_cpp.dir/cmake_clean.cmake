@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/workspace/devel/include/rt1_pkg/Cancel.h"
   "/root/workspace/devel/include/rt1_pkg/LastTarget.h"
   "/root/workspace/devel/include/rt1_pkg/RobotPosVel.h"
   "/root/workspace/devel/include/rt1_pkg/RobotToTarget.h"

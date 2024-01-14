@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/workspace/devel/share/common-lisp/ros/rt1_pkg/msg/Cancel.lisp"
   "/root/workspace/devel/share/common-lisp/ros/rt1_pkg/msg/RobotPosVel.lisp"
   "/root/workspace/devel/share/common-lisp/ros/rt1_pkg/msg/TargetPos.lisp"
   "/root/workspace/devel/share/common-lisp/ros/rt1_pkg/srv/LastTarget.lisp"

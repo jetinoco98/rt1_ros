@@ -55,6 +55,7 @@ include rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp.dir/progress.make
 
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/RobotPosVel.h
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/TargetPos.h
+rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/Cancel.h
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/LastTarget.h
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/RobotToTarget.h
 
@@ -71,23 +72,30 @@ rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from rt1_pkg/TargetPos.msg"
 	cd /root/workspace/src/rt1_pkg && /root/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/workspace/src/rt1_pkg/msg/TargetPos.msg -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/include/rt1_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
 
+/root/workspace/devel/include/rt1_pkg/Cancel.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/root/workspace/devel/include/rt1_pkg/Cancel.h: /root/workspace/src/rt1_pkg/msg/Cancel.msg
+/root/workspace/devel/include/rt1_pkg/Cancel.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from rt1_pkg/Cancel.msg"
+	cd /root/workspace/src/rt1_pkg && /root/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/workspace/src/rt1_pkg/msg/Cancel.msg -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/include/rt1_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
+
 /root/workspace/devel/include/rt1_pkg/LastTarget.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/workspace/devel/include/rt1_pkg/LastTarget.h: /root/workspace/src/rt1_pkg/srv/LastTarget.srv
 /root/workspace/devel/include/rt1_pkg/LastTarget.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /root/workspace/devel/include/rt1_pkg/LastTarget.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from rt1_pkg/LastTarget.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from rt1_pkg/LastTarget.srv"
 	cd /root/workspace/src/rt1_pkg && /root/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/workspace/src/rt1_pkg/srv/LastTarget.srv -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/include/rt1_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /root/workspace/devel/include/rt1_pkg/RobotToTarget.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/workspace/devel/include/rt1_pkg/RobotToTarget.h: /root/workspace/src/rt1_pkg/srv/RobotToTarget.srv
 /root/workspace/devel/include/rt1_pkg/RobotToTarget.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /root/workspace/devel/include/rt1_pkg/RobotToTarget.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from rt1_pkg/RobotToTarget.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from rt1_pkg/RobotToTarget.srv"
 	cd /root/workspace/src/rt1_pkg && /root/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/workspace/src/rt1_pkg/srv/RobotToTarget.srv -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/include/rt1_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
 
 rt1_pkg_generate_messages_cpp: rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp
 rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/RobotPosVel.h
 rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/TargetPos.h
+rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/Cancel.h
 rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/LastTarget.h
 rt1_pkg_generate_messages_cpp: /root/workspace/devel/include/rt1_pkg/RobotToTarget.h
 rt1_pkg_generate_messages_cpp: rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_cpp.dir/build.make

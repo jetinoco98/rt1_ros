@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg;/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
+messages_str = "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg;/root/workspace/src/rt1_pkg/msg/TargetPos.msg;/root/workspace/src/rt1_pkg/msg/Cancel.msg"
 services_str = "/root/workspace/src/rt1_pkg/srv/LastTarget.srv;/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
 pkg_name = "rt1_pkg"
 dependencies_str = "std_msgs;actionlib_msgs;geometry_msgs;nav_msgs"

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/root/workspace/devel/share/roseus/ros/rt1_pkg/manifest.l"
+  "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/Cancel.l"
   "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/RobotPosVel.l"
   "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/TargetPos.l"
   "/root/workspace/devel/share/roseus/ros/rt1_pkg/srv/LastTarget.l"

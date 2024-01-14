@@ -55,6 +55,7 @@ include rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py.dir/progress.make
 
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_RobotPosVel.py
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_TargetPos.py
+rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py
 rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py
@@ -71,35 +72,43 @@ rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py: /root/workspace/devel/lib/pytho
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG rt1_pkg/TargetPos"
 	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/workspace/src/rt1_pkg/msg/TargetPos.msg -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg
 
+/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py: /root/workspace/src/rt1_pkg/msg/Cancel.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG rt1_pkg/Cancel"
+	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/workspace/src/rt1_pkg/msg/Cancel.msg -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg
+
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py: /root/workspace/src/rt1_pkg/srv/LastTarget.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV rt1_pkg/LastTarget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV rt1_pkg/LastTarget"
 	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/workspace/src/rt1_pkg/srv/LastTarget.srv -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv
 
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py: /root/workspace/src/rt1_pkg/srv/RobotToTarget.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV rt1_pkg/RobotToTarget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV rt1_pkg/RobotToTarget"
 	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/workspace/src/rt1_pkg/srv/RobotToTarget.srv -Irt1_pkg:/root/workspace/src/rt1_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -p rt1_pkg -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv
 
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_RobotPosVel.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_TargetPos.py
+/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for rt1_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for rt1_pkg"
 	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg --initpy
 
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_RobotPosVel.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_TargetPos.py
+/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py
 /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/__init__.py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python srv __init__.py for rt1_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python srv __init__.py for rt1_pkg"
 	cd /root/workspace/build/rt1_pkg && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv --initpy
 
 rt1_pkg_generate_messages_py: rt1_pkg/CMakeFiles/rt1_pkg_generate_messages_py
 rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_RobotPosVel.py
 rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_TargetPos.py
+rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py
 rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_LastTarget.py
 rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/srv/_RobotToTarget.py
 rt1_pkg_generate_messages_py: /root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py

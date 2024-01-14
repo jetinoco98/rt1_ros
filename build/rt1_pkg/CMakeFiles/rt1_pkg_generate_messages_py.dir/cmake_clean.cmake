@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_Cancel.py"
   "/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_RobotPosVel.py"
   "/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/_TargetPos.py"
   "/root/workspace/devel/lib/python3/dist-packages/rt1_pkg/msg/__init__.py"
