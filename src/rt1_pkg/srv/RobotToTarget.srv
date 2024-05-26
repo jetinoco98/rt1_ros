@@ -1,4 +1,6 @@
+# Request part (empty)
 ---
+# Response part
 float32 dx
 float32 dy
 float32 distance
