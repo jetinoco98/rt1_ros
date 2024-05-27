@@ -1,22 +1,31 @@
-#!/usr/bin/env python3
-
 import rospy
 from rt1_pkg.msg import TargetPos
 from rt1_pkg.srv import LastTarget, LastTargetResponse
 
 class LastTargetServer:
+    """
+    A ROS node that provides a service to get the last target position.
+
+    This node initializes the necessary subscribers and services to communicate
+    with other ROS nodes. It subscribes to the "/target_pos" topic to receive
+    the latest target position and provides a service to return the last target position.
+
+    Attributes:
+        last_target_position (TargetPos): The last received target position.
+    """
+
     def __init__(self):
         """
-        Initializes the ROS node, sets up the subscriber and the service.
+        Initialize the ROS node, subscriber, and service.
         """
         self.last_target_position = None
         
         rospy.init_node('last_target')
-        
-        # Subscriber
+
+        #: Subscriber to the "/target_pos" topic
         rospy.Subscriber("/target_pos", TargetPos, self.target_pos_callback)
         
-        # Service
+        #: Service to provide the last target position
         rospy.Service('srv_last_target', LastTarget, self.set_last_target)
         
         rospy.loginfo("Service is up and running: Obtain target position.")
@@ -55,3 +64,4 @@ if __name__ == "__main__":
         LastTargetServer()
     except rospy.ROSInterruptException:
         rospy.logerr("ROS node initialization failed or interrupted.")
+

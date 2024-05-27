@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import rospy
 import math
 from rt1_pkg.srv import RobotToTarget, RobotToTargetResponse
@@ -7,27 +5,45 @@ from rt1_pkg.msg import RobotPosVel
 from rt1_pkg.msg import TargetPos 
 
 class RobotToTargetServer:
+    """
+    A ROS node that provides a service to get the distance from the robot to the target and average velocities.
+
+    This node initializes the necessary subscribers and services to communicate with other ROS nodes. 
+    It subscribes to the "/target_pos" and "/robot_pos_vel" topics to receive the latest target position 
+    and the robot's position and velocity, respectively. It provides a service to return the distance 
+    to the target and the average velocities.
+
+    Attributes:
+        velocities_list (list): A list to store the robot's velocity data.
+        target_acquired (bool): A flag indicating whether the target position has been received.
+        average_velocities_window (int): The window size for calculating average velocities.
+        robot (RobotPosVel): The current position and velocity of the robot.
+        target (TargetPos): The current position of the target.
+    """
+
     def __init__(self):
         """
-        Initializes the ROS node, sets up the subscribers and the service.
+        Initialize the ROS node, subscribers, and service.
         """
         self.velocities_list = []
         self.target_acquired = False
         
-        # Get parameter for the average velocity window
+        #: Get parameter for the average velocity window
         self.average_velocities_window = rospy.get_param('average_velocities_window', 10)
         
-        # Initialize position and velocity data
+        #: Initialize position and velocity data
         self.robot = RobotPosVel()
         self.target = TargetPos()
         
         rospy.init_node('robot_to_target', anonymous=False)
         
-        # Subscribers
+        #: Subscriber to the "/target_pos" topic
         rospy.Subscriber("/target_pos", TargetPos, self.target_pos_callback)
+        
+        #: Subscriber to the "/robot_pos_vel" topic
         rospy.Subscriber("/robot_pos_vel", RobotPosVel, self.robot_pos_vel_callback)
         
-        # Service
+        #: Service to provide the distance to the target and average velocities
         rospy.Service("srv_robot_to_target", RobotToTarget, self.get_robot_to_target)
         
         rospy.loginfo("Service up and running: Obtain distance to target and average velocities.")
@@ -54,7 +70,7 @@ class RobotToTargetServer:
         self.robot.x = data.x
         self.robot.y = data.y
         
-        # Update the velocities list
+        #: Update the velocities list
         if len(self.velocities_list) < self.average_velocities_window:
             self.velocities_list.append((data.vx, data.vy))
         else:
@@ -74,21 +90,21 @@ class RobotToTargetServer:
         response = RobotToTargetResponse()
         
         if self.target_acquired:
-            # Obtain the target position with respect to the robot
+            #: Obtain the target position with respect to the robot
             response.dx = self.target.x - self.robot.x
             response.dy = self.target.y - self.robot.y
             
-            # Log the target position information
+            #: Log the target position information
             rospy.loginfo("Target X position: %f Target Y position: %f", self.target.x, self.target.y)
             
-            # Calculate the Euclidean distance
+            #: Calculate the Euclidean distance
             response.distance = math.hypot(response.dx, response.dy)
         else:
             response.dx = 0.0
             response.dy = 0.0
             response.distance = 0.0
         
-        # Calculate the average velocities
+        #: Calculate the average velocities
         if self.velocities_list:
             response.average_vx = sum(x[0] for x in self.velocities_list) / len(self.velocities_list)
             response.average_vy = sum(y[1] for y in self.velocities_list) / len(self.velocities_list)
@@ -103,3 +119,4 @@ if __name__ == "__main__":
         RobotToTargetServer()
     except rospy.ROSInterruptException:
         rospy.logerr("ROS node initialization failed or interrupted.")
+
