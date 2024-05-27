@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESEARCH TRACK 1 &mdash; rt1_ros 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=359c27e9"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to rt1_ros’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            rt1_ros
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RESEARCH TRACK 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#assignment-2">ASSIGNMENT 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-run-the-program">How to run the program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-to-do-during-execution">What to do during execution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#select-new-target-coordinates">1. Select new target coordinates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cancel">2. Cancel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtain-the-last-target">3. Obtain the last target</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtain-data-about-the-robot-with-respect-to-the-target-distance-velocity">4. Obtain data about the robot with respect to the target (distance, velocity)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#code-explanation-with-pseudocode">Code Explanation (with pseudocode)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#set-target-py">set_target.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#last-target-service-py">last_target_service.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robot-to-target-service-py">robot_to_target_service.py</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rt1_ros</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">RESEARCH TRACK 1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="research-track-1">
+<h1>RESEARCH TRACK 1<a class="headerlink" href="#research-track-1" title="Permalink to this heading"></a></h1>
+</section>
+<section id="assignment-2">
+<h1>ASSIGNMENT 2<a class="headerlink" href="#assignment-2" title="Permalink to this heading"></a></h1>
+<p>A ROS-based Implementation using the python language, focused on the nuances of the development action clients, services and custom messages for an already developed
+program based on the automatic control of a robot thoughout a simulated environment.</p>
+<p>In essence, the following implementations were achieved:</p>
+<ol class="arabic simple">
+<li><p>The creation of a node for the selection (in real-time) of a new target for the drone.</p></li>
+<li><p>The use of drone obtained data through custom messages.</p></li>
+<li><p>The creation of a service that returns the coordinates selected by the user.</p></li>
+<li><p>The creation of a service that uses the data on the created custom messages to show the user distance and average velocity of the robot.</p></li>
+</ol>
+<section id="how-to-run-the-program">
+<h2>How to run the program<a class="headerlink" href="#how-to-run-the-program" title="Permalink to this heading"></a></h2>
+<p>All of the steps provided from this point onwards must be inputted on the Linux terminal, inside the workspace containing the files.</p>
+<p>First we need to have roscore running in the background.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roscore</span> <span class="o">&amp;</span>
+</pre></div>
+</div>
+<p>On new machines the workspace needs to be rebuilt.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">catkin_make</span>
+</pre></div>
+</div>
+<p>Then we must execute the already written launch file inside our workspace.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">roslaunch</span> <span class="n">rt1_pkg</span> <span class="n">project</span><span class="o">.</span><span class="n">launch</span>
+</pre></div>
+</div>
+</section>
+<section id="what-to-do-during-execution">
+<h2>What to do during execution<a class="headerlink" href="#what-to-do-during-execution" title="Permalink to this heading"></a></h2>
+<p>Because of the new implementations made during this work, the user can now set a new target, change it even during execution of the process to reach it, and even cancel it.
+The first and second commands uses ‘rostopic’, while the third and fourth uses ‘rosservice’.</p>
+<section id="select-new-target-coordinates">
+<h3>1. Select new target coordinates<a class="headerlink" href="#select-new-target-coordinates" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rostopic</span> <span class="n">pub</span> <span class="o">/</span><span class="n">target_pos</span> <span class="n">rt1_pkg</span><span class="o">/</span><span class="n">TargetPos</span> <span class="s2">&quot;x: 2.0 y: 2.0&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="cancel">
+<h3>2. Cancel<a class="headerlink" href="#cancel" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rostopic</span> <span class="n">pub</span> <span class="o">/</span><span class="n">cancel_target</span> <span class="n">rt1_pkg</span><span class="o">/</span><span class="n">Cancel</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span> 
+</pre></div>
+</div>
+</section>
+<section id="obtain-the-last-target">
+<h3>3. Obtain the last target<a class="headerlink" href="#obtain-the-last-target" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosservice</span> <span class="n">call</span> <span class="o">/</span><span class="n">srv_last_target</span> 
+</pre></div>
+</div>
+</section>
+<section id="obtain-data-about-the-robot-with-respect-to-the-target-distance-velocity">
+<h3>4. Obtain data about the robot with respect to the target (distance, velocity)<a class="headerlink" href="#obtain-data-about-the-robot-with-respect-to-the-target-distance-velocity" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosservice</span> <span class="n">call</span> <span class="o">/</span><span class="n">srv_robot_to_target</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="code-explanation-with-pseudocode">
+<h2>Code Explanation (with pseudocode)<a class="headerlink" href="#code-explanation-with-pseudocode" title="Permalink to this heading"></a></h2>
+<p>We can find all related file inside the ‘scripts’ folder, as everything was programmed using the Python language.</p>
+<ul class="simple">
+<li><p>The action client was programmed inside the ‘set_target.py’ file.</p></li>
+<li><p>The services were programmed inside the ‘last_target_service.py’ and ‘robot_to_target_service.py’ files.</p></li>
+</ul>
+<section id="set-target-py">
+<h3>set_target.py<a class="headerlink" href="#set-target-py" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">timer_callback</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">goal</span> <span class="n">has</span> <span class="n">active</span> <span class="n">state</span>
+        <span class="n">Print</span> <span class="n">current</span> <span class="n">position</span> <span class="n">to</span> <span class="n">logs</span>
+<span class="n">function</span> <span class="n">cancel_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">cancel</span> <span class="n">requests</span>
+    <span class="n">Log</span> <span class="n">into</span> <span class="n">rospy</span>
+<span class="n">function</span>  <span class="n">target_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">target</span> <span class="n">position</span> <span class="n">updates</span>
+    <span class="n">Create</span> <span class="n">a</span> <span class="n">goal</span> <span class="k">for</span> <span class="n">the</span> <span class="n">action</span> <span class="n">server</span>
+    <span class="n">Send</span> <span class="n">the</span> <span class="n">goal</span> <span class="n">to</span> <span class="n">the</span> <span class="n">action</span> <span class="n">server</span>
+<span class="n">function</span> <span class="n">state_callback</span><span class="p">()</span>
+    <span class="n">Obtain</span> <span class="n">message</span> <span class="kn">from</span> <span class="o">/</span><span class="n">odom</span>
+    <span class="n">Construct</span> <span class="n">custom</span> <span class="n">message</span>
+    <span class="n">Publish</span> <span class="n">the</span> <span class="n">data</span>
+<span class="n">function</span> <span class="n">done_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">completion</span> <span class="n">of</span> <span class="n">the</span> <span class="n">goal</span>
+    <span class="n">Log</span> <span class="n">information</span> <span class="n">to</span> <span class="n">rospy</span>
+<span class="n">function</span> <span class="n">feedback_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">the</span> <span class="n">feedback</span> <span class="n">data</span> <span class="n">during</span> <span class="n">execution</span>
+<span class="n">Main</span> <span class="n">function</span>
+    <span class="n">Initialize</span> <span class="n">the</span> <span class="n">ROS</span> <span class="n">node</span>
+    <span class="n">Create</span> <span class="n">a</span> <span class="n">SimpleActionClient</span>
+    <span class="n">Get</span> <span class="n">the</span> <span class="n">namespace</span>
+    <span class="n">Wait</span> <span class="k">for</span> <span class="n">the</span> <span class="n">action</span> <span class="n">server</span>
+    <span class="n">Set</span> <span class="n">up</span> <span class="n">subscribers</span>
+    <span class="n">Set</span> <span class="n">up</span> <span class="n">publishers</span>
+    <span class="n">Set</span> <span class="n">up</span> <span class="n">timer</span> <span class="k">for</span> <span class="n">periodic</span> <span class="n">callbacls</span>
+    <span class="n">Start</span> <span class="n">of</span> <span class="n">the</span> <span class="n">ROS</span> <span class="n">node</span>
+    <span class="n">Wait</span> <span class="k">for</span> <span class="n">events</span>
+    <span class="n">Signal</span> <span class="ow">in</span> <span class="n">case</span> <span class="n">of</span> <span class="n">shutdown</span>
+    <span class="n">Wait</span> <span class="n">before</span> <span class="n">exiting</span>
+</pre></div>
+</div>
+</section>
+<section id="last-target-service-py">
+<h3>last_target_service.py<a class="headerlink" href="#last-target-service-py" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">target_pos_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">updates</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">target</span> <span class="n">position</span>
+<span class="n">function</span> <span class="n">set_last_target</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">response</span> <span class="n">obtained</span> <span class="k">for</span> <span class="n">last</span> <span class="n">target</span> <span class="n">position</span><span class="p">:</span>
+        <span class="n">Set</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">message</span> <span class="n">form</span>
+    <span class="k">else</span>
+        <span class="n">log</span> <span class="n">response</span> <span class="n">into</span> <span class="n">respy</span>
+<span class="n">function</span> <span class="n">last_target_server</span><span class="p">()</span>
+    <span class="n">Initialize</span> <span class="n">the</span> <span class="n">Ros</span> <span class="n">node</span>
+    <span class="n">Set</span> <span class="n">up</span> <span class="n">subscribers</span> <span class="ow">and</span> <span class="n">services</span>
+    <span class="n">Waiting</span> <span class="k">for</span> <span class="n">events</span>
+<span class="n">Execution</span> <span class="n">of</span> <span class="n">functions</span> <span class="o">/</span> <span class="n">running</span> <span class="n">the</span> <span class="n">ROS</span> <span class="n">node</span>     
+</pre></div>
+</div>
+</section>
+<section id="robot-to-target-service-py">
+<h3>robot_to_target_service.py<a class="headerlink" href="#robot-to-target-service-py" title="Permalink to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Getting</span> <span class="n">parameter</span> <span class="k">for</span> <span class="n">average</span> <span class="n">velocity</span> <span class="n">window</span>
+<span class="n">Obtaining</span> <span class="n">the</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">custom</span> <span class="n">messages</span>
+
+<span class="n">function</span> <span class="n">Target_pos_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">the</span> <span class="n">updates</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">target</span> <span class="n">position</span>
+<span class="n">function</span> <span class="n">RobotPosVel_callback</span><span class="p">()</span>
+    <span class="n">Handle</span> <span class="n">the</span> <span class="n">updates</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">position</span> <span class="ow">and</span> <span class="n">velocities</span>
+    <span class="k">if</span> <span class="n">length</span> <span class="n">of</span> <span class="n">velocity</span> <span class="nb">list</span> <span class="o">&lt;</span> <span class="n">size</span> <span class="n">of</span> <span class="n">window</span>
+        <span class="n">add</span> <span class="n">velocity</span> <span class="n">to</span> <span class="nb">list</span>
+    <span class="k">elif</span> <span class="n">length</span> <span class="n">of</span> <span class="n">velocity</span> <span class="nb">list</span> <span class="o">==</span> <span class="n">size</span> <span class="n">of</span> <span class="n">window</span>
+        <span class="n">delete</span> <span class="n">oldest</span> <span class="n">recorded</span> <span class="n">velocity</span>
+        <span class="n">add</span> <span class="n">the</span> <span class="n">newest</span> <span class="n">velocity</span> <span class="n">to</span> <span class="n">the</span> <span class="nb">list</span>
+<span class="n">function</span> <span class="n">get_RobotToTarget</span><span class="p">()</span>
+    <span class="n">Creating</span> <span class="n">a</span> <span class="n">response</span> <span class="nb">object</span>
+    <span class="n">Logging</span> <span class="n">the</span> <span class="n">target</span> <span class="n">position</span> <span class="n">information</span> <span class="n">into</span> <span class="n">rospy</span>
+    <span class="n">Math</span> <span class="n">function</span> <span class="n">to</span> <span class="n">obtain</span> <span class="n">the</span> <span class="n">distance</span> <span class="kn">from</span> <span class="nn">two</span> <span class="n">coordinates</span>
+<span class="n">function</span> <span class="n">robot_to_target_server</span><span class="p">()</span>
+    <span class="n">Initialization</span> <span class="n">of</span> <span class="n">the</span> <span class="n">ROS</span> <span class="n">node</span>
+    <span class="n">Setting</span> <span class="n">up</span> <span class="n">subscribers</span> <span class="ow">and</span> <span class="n">services</span>
+    <span class="n">Waiting</span> <span class="k">for</span> <span class="n">events</span>
+<span class="n">Main</span> <span class="n">function</span> <span class="n">call</span><span class="p">:</span> <span class="n">Run</span> <span class="n">the</span> <span class="n">ROS</span> <span class="n">node</span> 
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to rt1_ros’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Josue Tinoco.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
