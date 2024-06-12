@@ -108,7 +108,9 @@
 (setf (get rt1_pkg::LastTargetRequest :md5sum-) "ff8d7d66dd3e4b731ef14a45d38888b6")
 (setf (get rt1_pkg::LastTargetRequest :datatype-) "rt1_pkg/LastTargetRequest")
 (setf (get rt1_pkg::LastTargetRequest :definition-)
-      "---
+      "# Request part (empty)
+---
+# Response part
 float32 x
 float32 y
 
@@ -117,7 +119,9 @@ float32 y
 (setf (get rt1_pkg::LastTargetResponse :md5sum-) "ff8d7d66dd3e4b731ef14a45d38888b6")
 (setf (get rt1_pkg::LastTargetResponse :datatype-) "rt1_pkg/LastTargetResponse")
 (setf (get rt1_pkg::LastTargetResponse :definition-)
-      "---
+      "# Request part (empty)
+---
+# Response part
 float32 x
 float32 y
 

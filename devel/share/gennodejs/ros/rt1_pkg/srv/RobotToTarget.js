@@ -55,6 +55,7 @@ class RobotToTargetRequest {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    # Request part (empty)
     
     `;
   }
@@ -162,6 +163,7 @@ class RobotToTargetResponse {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    # Response part
     float32 dx
     float32 dy
     float32 distance

@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/root/workspace/devel/include/assignment_2_2023/PlanningAction.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningActionFeedback.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningActionGoal.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningActionResult.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningFeedback.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningGoal.h"
-  "/root/workspace/devel/include/assignment_2_2023/PlanningResult.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningAction.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningActionFeedback.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningActionGoal.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningActionResult.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningFeedback.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningGoal.h"
+  "/root/rt1_ros/devel/include/assignment_2_2023/PlanningResult.h"
   "CMakeFiles/assignment_2_2023_generate_messages_cpp"
 )
 

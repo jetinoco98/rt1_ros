@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrt1_pkg".split(';') if "-lrt1_pkg" != "" else []
 PROJECT_NAME = "rt1_pkg"
-PROJECT_SPACE_DIR = "/root/workspace/install"
+PROJECT_SPACE_DIR = "/root/rt1_ros/install"
 PROJECT_VERSION = "0.0.0"

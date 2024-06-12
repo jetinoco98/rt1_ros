@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "/root/workspace/devel/include/rt1_pkg/Cancel.h"
-  "/root/workspace/devel/include/rt1_pkg/LastTarget.h"
-  "/root/workspace/devel/include/rt1_pkg/RobotPosVel.h"
-  "/root/workspace/devel/include/rt1_pkg/RobotToTarget.h"
-  "/root/workspace/devel/include/rt1_pkg/TargetPos.h"
+  "/root/rt1_ros/devel/include/rt1_pkg/LastTarget.h"
+  "/root/rt1_ros/devel/include/rt1_pkg/RobotPosVel.h"
+  "/root/rt1_ros/devel/include/rt1_pkg/RobotToTarget.h"
+  "/root/rt1_ros/devel/include/rt1_pkg/TargetPos.h"
   "CMakeFiles/rt1_pkg_generate_messages_cpp"
 )
 

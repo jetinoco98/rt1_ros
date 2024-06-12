@@ -7,4 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/root/workspace/build'
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/root/rt1_ros/build'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'
+export ROS_PACKAGE_PATH='/root/rt1_ros/src:/opt/ros/noetic/share'

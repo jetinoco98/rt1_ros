@@ -170,7 +170,8 @@ struct Definition< ::rt1_pkg::RobotToTargetResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 dx\n"
+    return "# Response part\n"
+"float32 dx\n"
 "float32 dy\n"
 "float32 distance\n"
 "float32 average_vx\n"

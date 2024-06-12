@@ -11,7 +11,8 @@ class LastTargetRequest(genpy.Message):
   _md5sum = "d41d8cd98f00b204e9800998ecf8427e"
   _type = "rt1_pkg/LastTargetRequest"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """"""
+  _full_text = """# Request part (empty)
+"""
   __slots__ = []
   _slot_types = []
 
@@ -102,7 +103,8 @@ class LastTargetResponse(genpy.Message):
   _md5sum = "ff8d7d66dd3e4b731ef14a45d38888b6"
   _type = "rt1_pkg/LastTargetResponse"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """float32 x
+  _full_text = """# Response part
+float32 x
 float32 y
 
 """

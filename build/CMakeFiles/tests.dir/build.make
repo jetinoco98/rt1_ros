@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/src
+CMAKE_SOURCE_DIR = /root/rt1_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/build
+CMAKE_BINARY_DIR = /root/rt1_ros/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /root/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/src /root/workspace/src /root/workspace/build /root/workspace/build /root/workspace/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/rt1_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/rt1_ros/src /root/rt1_ros/src /root/rt1_ros/build /root/rt1_ros/build /root/rt1_ros/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

@@ -55,7 +55,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
  add_message_files(
    DIRECTORY msg
-   FILES RobotPosVel.msg TargetPos.msg Cancel.msg
+   FILES RobotPosVel.msg TargetPos.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -167,7 +167,7 @@ include_directories(
 catkin_install_python(PROGRAMS
   scripts/last_target_service.py
   scripts/robot_to_target_service.py
-  scripts/set_target.py
+  # scripts/set_target.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

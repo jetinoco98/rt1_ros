@@ -67,14 +67,14 @@ set(rt1_pkg_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rt1_pkg_SOURCE_PREFIX /root/workspace/src/rt1_pkg)
-  set(rt1_pkg_DEVEL_PREFIX /root/workspace/devel)
+  set(rt1_pkg_SOURCE_PREFIX /root/rt1_ros/src/rt1_pkg)
+  set(rt1_pkg_DEVEL_PREFIX /root/rt1_ros/devel)
   set(rt1_pkg_INSTALL_PREFIX "")
   set(rt1_pkg_PREFIX ${rt1_pkg_DEVEL_PREFIX})
 else()
   set(rt1_pkg_SOURCE_PREFIX "")
   set(rt1_pkg_DEVEL_PREFIX "")
-  set(rt1_pkg_INSTALL_PREFIX /root/workspace/install)
+  set(rt1_pkg_INSTALL_PREFIX /root/rt1_ros/install)
   set(rt1_pkg_PREFIX ${rt1_pkg_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/workspace/install/lib;/root/workspace/devel/lib;/root/my_ros_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/rt1_ros/install/lib;/root/rt1_ros/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

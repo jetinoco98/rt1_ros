@@ -141,7 +141,9 @@
 (setf (get rt1_pkg::RobotToTargetRequest :md5sum-) "185aad6ed636881de3d9111fc76b7e00")
 (setf (get rt1_pkg::RobotToTargetRequest :datatype-) "rt1_pkg/RobotToTargetRequest")
 (setf (get rt1_pkg::RobotToTargetRequest :definition-)
-      "---
+      "# Request part (empty)
+---
+# Response part
 float32 dx
 float32 dy
 float32 distance
@@ -153,7 +155,9 @@ float32 average_vy
 (setf (get rt1_pkg::RobotToTargetResponse :md5sum-) "185aad6ed636881de3d9111fc76b7e00")
 (setf (get rt1_pkg::RobotToTargetResponse :datatype-) "rt1_pkg/RobotToTargetResponse")
 (setf (get rt1_pkg::RobotToTargetResponse :definition-)
-      "---
+      "# Request part (empty)
+---
+# Response part
 float32 dx
 float32 dy
 float32 distance

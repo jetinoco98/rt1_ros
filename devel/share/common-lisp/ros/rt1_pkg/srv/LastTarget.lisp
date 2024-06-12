@@ -38,10 +38,10 @@
   "ff8d7d66dd3e4b731ef14a45d38888b6")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<LastTarget-request>)))
   "Returns full string definition for message of type '<LastTarget-request>"
-  (cl:format cl:nil "~%~%"))
+  (cl:format cl:nil "# Request part (empty)~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'LastTarget-request)))
   "Returns full string definition for message of type 'LastTarget-request"
-  (cl:format cl:nil "~%~%"))
+  (cl:format cl:nil "# Request part (empty)~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <LastTarget-request>))
   (cl:+ 0
 ))
@@ -124,10 +124,10 @@
   "ff8d7d66dd3e4b731ef14a45d38888b6")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<LastTarget-response>)))
   "Returns full string definition for message of type '<LastTarget-response>"
-  (cl:format cl:nil "float32 x~%float32 y~%~%~%~%"))
+  (cl:format cl:nil "# Response part~%float32 x~%float32 y~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'LastTarget-response)))
   "Returns full string definition for message of type 'LastTarget-response"
-  (cl:format cl:nil "float32 x~%float32 y~%~%~%~%"))
+  (cl:format cl:nil "# Response part~%float32 x~%float32 y~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <LastTarget-response>))
   (cl:+ 0
      4

@@ -1,8 +1,8 @@
-# Install script for directory: /root/workspace/src
+# Install script for directory: /root/rt1_ros/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/root/rt1_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,90 +49,90 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/_setup_util.py")
+   "/root/rt1_ros/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE PROGRAM FILES "/root/workspace/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE PROGRAM FILES "/root/rt1_ros/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/env.sh")
+   "/root/rt1_ros/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE PROGRAM FILES "/root/workspace/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE PROGRAM FILES "/root/rt1_ros/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/setup.bash;/root/workspace/install/local_setup.bash")
+   "/root/rt1_ros/install/setup.bash;/root/rt1_ros/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE FILE FILES
-    "/root/workspace/build/catkin_generated/installspace/setup.bash"
-    "/root/workspace/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE FILE FILES
+    "/root/rt1_ros/build/catkin_generated/installspace/setup.bash"
+    "/root/rt1_ros/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/setup.sh;/root/workspace/install/local_setup.sh")
+   "/root/rt1_ros/install/setup.sh;/root/rt1_ros/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE FILE FILES
-    "/root/workspace/build/catkin_generated/installspace/setup.sh"
-    "/root/workspace/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE FILE FILES
+    "/root/rt1_ros/build/catkin_generated/installspace/setup.sh"
+    "/root/rt1_ros/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/setup.zsh;/root/workspace/install/local_setup.zsh")
+   "/root/rt1_ros/install/setup.zsh;/root/rt1_ros/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE FILE FILES
-    "/root/workspace/build/catkin_generated/installspace/setup.zsh"
-    "/root/workspace/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE FILE FILES
+    "/root/rt1_ros/build/catkin_generated/installspace/setup.zsh"
+    "/root/rt1_ros/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/workspace/install/.rosinstall")
+   "/root/rt1_ros/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/workspace/install" TYPE FILE FILES "/root/workspace/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/root/rt1_ros/install" TYPE FILE FILES "/root/rt1_ros/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/workspace/build/gtest/cmake_install.cmake")
-  include("/root/workspace/build/rt1_pkg/cmake_install.cmake")
-  include("/root/workspace/build/assignment_2_2023/cmake_install.cmake")
+  include("/root/rt1_ros/build/gtest/cmake_install.cmake")
+  include("/root/rt1_ros/build/rt1_pkg/cmake_install.cmake")
+  include("/root/rt1_ros/build/assignment_2_2023/cmake_install.cmake")
 
 endif()
 
@@ -144,5 +144,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/workspace/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/rt1_ros/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -11,7 +11,8 @@ class RobotToTargetRequest(genpy.Message):
   _md5sum = "d41d8cd98f00b204e9800998ecf8427e"
   _type = "rt1_pkg/RobotToTargetRequest"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """"""
+  _full_text = """# Request part (empty)
+"""
   __slots__ = []
   _slot_types = []
 
@@ -102,7 +103,8 @@ class RobotToTargetResponse(genpy.Message):
   _md5sum = "185aad6ed636881de3d9111fc76b7e00"
   _type = "rt1_pkg/RobotToTargetResponse"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """float32 dx
+  _full_text = """# Response part
+float32 dx
 float32 dy
 float32 distance
 float32 average_vx

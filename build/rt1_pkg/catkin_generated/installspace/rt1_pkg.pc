@@ -1,4 +1,4 @@
-prefix=/root/workspace/install
+prefix=/root/rt1_ros/install
 
 Name: rt1_pkg
 Description: Description of rt1_pkg

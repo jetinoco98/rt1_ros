@@ -67,14 +67,14 @@ set(assignment_2_2023_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(assignment_2_2023_SOURCE_PREFIX /root/workspace/src/assignment_2_2023)
-  set(assignment_2_2023_DEVEL_PREFIX /root/workspace/devel)
+  set(assignment_2_2023_SOURCE_PREFIX /root/rt1_ros/src/assignment_2_2023)
+  set(assignment_2_2023_DEVEL_PREFIX /root/rt1_ros/devel)
   set(assignment_2_2023_INSTALL_PREFIX "")
   set(assignment_2_2023_PREFIX ${assignment_2_2023_DEVEL_PREFIX})
 else()
   set(assignment_2_2023_SOURCE_PREFIX "")
   set(assignment_2_2023_DEVEL_PREFIX "")
-  set(assignment_2_2023_INSTALL_PREFIX /root/workspace/install)
+  set(assignment_2_2023_INSTALL_PREFIX /root/rt1_ros/install)
   set(assignment_2_2023_PREFIX ${assignment_2_2023_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/workspace/install/lib;/root/workspace/devel/lib;/root/my_ros_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/rt1_ros/install/lib;/root/rt1_ros/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

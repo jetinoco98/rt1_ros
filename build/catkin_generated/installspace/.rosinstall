@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /root/workspace/install/setup.sh
+    local-name: /root/rt1_ros/install/setup.sh

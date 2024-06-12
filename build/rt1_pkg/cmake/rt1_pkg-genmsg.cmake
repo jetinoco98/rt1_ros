@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "rt1_pkg: 3 messages, 2 services")
+message(STATUS "rt1_pkg: 2 messages, 2 services")
 
-set(MSG_I_FLAGS "-Irt1_pkg:/root/workspace/src/rt1_pkg/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irt1_pkg:/root/rt1_ros/src/rt1_pkg/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,29 +17,24 @@ add_custom_target(rt1_pkg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" ""
 )
 
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" ""
 )
 
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/workspace/src/rt1_pkg/msg/Cancel.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" ""
 )
 
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" ""
-)
-
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
-add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rt1_pkg" "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" ""
 )
 
 #
@@ -49,19 +44,13 @@ add_custom_target(_rt1_pkg_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rt1_pkg
 )
 _generate_msg_cpp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rt1_pkg
-)
-_generate_msg_cpp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/Cancel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rt1_pkg
@@ -69,13 +58,13 @@ _generate_msg_cpp(rt1_pkg
 
 ### Generating Services
 _generate_srv_cpp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/LastTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rt1_pkg
 )
 _generate_srv_cpp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rt1_pkg
@@ -93,15 +82,13 @@ add_custom_target(rt1_pkg_generate_messages_cpp
 add_dependencies(rt1_pkg_generate_messages rt1_pkg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_cpp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_cpp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_cpp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
-add_dependencies(rt1_pkg_generate_messages_cpp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_cpp _rt1_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -114,19 +101,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rt1_pkg_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rt1_pkg
 )
 _generate_msg_eus(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rt1_pkg
-)
-_generate_msg_eus(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/Cancel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rt1_pkg
@@ -134,13 +115,13 @@ _generate_msg_eus(rt1_pkg
 
 ### Generating Services
 _generate_srv_eus(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/LastTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rt1_pkg
 )
 _generate_srv_eus(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rt1_pkg
@@ -158,15 +139,13 @@ add_custom_target(rt1_pkg_generate_messages_eus
 add_dependencies(rt1_pkg_generate_messages rt1_pkg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_eus _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_eus _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_eus _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
-add_dependencies(rt1_pkg_generate_messages_eus _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_eus _rt1_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -179,19 +158,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rt1_pkg_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rt1_pkg
 )
 _generate_msg_lisp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rt1_pkg
-)
-_generate_msg_lisp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/Cancel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rt1_pkg
@@ -199,13 +172,13 @@ _generate_msg_lisp(rt1_pkg
 
 ### Generating Services
 _generate_srv_lisp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/LastTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rt1_pkg
 )
 _generate_srv_lisp(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rt1_pkg
@@ -223,15 +196,13 @@ add_custom_target(rt1_pkg_generate_messages_lisp
 add_dependencies(rt1_pkg_generate_messages rt1_pkg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_lisp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_lisp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_lisp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
-add_dependencies(rt1_pkg_generate_messages_lisp _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_lisp _rt1_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -244,19 +215,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rt1_pkg_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rt1_pkg
 )
 _generate_msg_nodejs(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rt1_pkg
-)
-_generate_msg_nodejs(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/Cancel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rt1_pkg
@@ -264,13 +229,13 @@ _generate_msg_nodejs(rt1_pkg
 
 ### Generating Services
 _generate_srv_nodejs(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/LastTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rt1_pkg
 )
 _generate_srv_nodejs(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rt1_pkg
@@ -288,15 +253,13 @@ add_custom_target(rt1_pkg_generate_messages_nodejs
 add_dependencies(rt1_pkg_generate_messages rt1_pkg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_nodejs _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_nodejs _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_nodejs _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
-add_dependencies(rt1_pkg_generate_messages_nodejs _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_nodejs _rt1_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -309,19 +272,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rt1_pkg_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rt1_pkg
 )
 _generate_msg_py(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/TargetPos.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rt1_pkg
-)
-_generate_msg_py(rt1_pkg
-  "/root/workspace/src/rt1_pkg/msg/Cancel.msg"
+  "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rt1_pkg
@@ -329,13 +286,13 @@ _generate_msg_py(rt1_pkg
 
 ### Generating Services
 _generate_srv_py(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/LastTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rt1_pkg
 )
 _generate_srv_py(rt1_pkg
-  "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv"
+  "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rt1_pkg
@@ -353,15 +310,13 @@ add_custom_target(rt1_pkg_generate_messages_py
 add_dependencies(rt1_pkg_generate_messages rt1_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/RobotPosVel.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_py _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/msg/TargetPos.msg" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_py _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/msg/Cancel.msg" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_py _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/LastTarget.srv" NAME_WE)
-add_dependencies(rt1_pkg_generate_messages_py _rt1_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/root/workspace/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
+get_filename_component(_filename "/root/rt1_ros/src/rt1_pkg/srv/RobotToTarget.srv" NAME_WE)
 add_dependencies(rt1_pkg_generate_messages_py _rt1_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

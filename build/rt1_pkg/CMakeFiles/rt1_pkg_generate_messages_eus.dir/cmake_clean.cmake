@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/manifest.l"
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/Cancel.l"
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/RobotPosVel.l"
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/msg/TargetPos.l"
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/srv/LastTarget.l"
-  "/root/workspace/devel/share/roseus/ros/rt1_pkg/srv/RobotToTarget.l"
+  "/root/rt1_ros/devel/share/roseus/ros/rt1_pkg/manifest.l"
+  "/root/rt1_ros/devel/share/roseus/ros/rt1_pkg/msg/RobotPosVel.l"
+  "/root/rt1_ros/devel/share/roseus/ros/rt1_pkg/msg/TargetPos.l"
+  "/root/rt1_ros/devel/share/roseus/ros/rt1_pkg/srv/LastTarget.l"
+  "/root/rt1_ros/devel/share/roseus/ros/rt1_pkg/srv/RobotToTarget.l"
   "CMakeFiles/rt1_pkg_generate_messages_eus"
 )
 

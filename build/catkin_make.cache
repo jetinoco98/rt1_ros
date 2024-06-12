@@ -1,2 +1,2 @@
 assignment_2_2023:rt1_pkg
--DCATKIN_DEVEL_PREFIX=/root/workspace/devel -DCMAKE_INSTALL_PREFIX=/root/workspace/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/root/rt1_ros/devel -DCMAKE_INSTALL_PREFIX=/root/rt1_ros/install -G Unix Makefiles

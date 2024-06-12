@@ -1,8 +1,8 @@
-prefix=/root/workspace/devel
+prefix=/root/rt1_ros/devel
 
 Name: assignment_2_2023
 Description: Description of assignment_2_2023
 Version: 0.0.0
-Cflags: -I/root/workspace/devel/include
+Cflags: -I/root/rt1_ros/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

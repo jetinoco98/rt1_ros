@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /root/workspace/devel/setup.sh
+    local-name: /root/rt1_ros/devel/setup.sh

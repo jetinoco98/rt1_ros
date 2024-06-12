@@ -130,7 +130,7 @@ struct Definition< ::rt1_pkg::LastTargetRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "\n"
+    return "# Request part (empty)\n"
 ;
   }
 

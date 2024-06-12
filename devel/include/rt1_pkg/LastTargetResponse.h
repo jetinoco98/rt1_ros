@@ -152,7 +152,8 @@ struct Definition< ::rt1_pkg::LastTargetResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 x\n"
+    return "# Response part\n"
+"float32 x\n"
 "float32 y\n"
 "\n"
 ;

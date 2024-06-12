@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/src
+CMAKE_SOURCE_DIR = /root/rt1_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/build
+CMAKE_BINARY_DIR = /root/rt1_ros/build
 
 # Utility rule file for nav_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build: nav_msgs_generate_m
 .PHONY : rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 
 rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
-	cd /root/workspace/build/rt1_pkg && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /root/rt1_ros/build/rt1_pkg && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend:
-	cd /root/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/src /root/workspace/src/rt1_pkg /root/workspace/build /root/workspace/build/rt1_pkg /root/workspace/build/rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/rt1_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/rt1_ros/src /root/rt1_ros/src/rt1_pkg /root/rt1_ros/build /root/rt1_ros/build/rt1_pkg /root/rt1_ros/build/rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rt1_pkg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
 

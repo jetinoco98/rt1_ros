@@ -67,14 +67,14 @@ set(rt1_pkg_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(rt1_pkg_SOURCE_PREFIX /root/workspace/src/rt1_pkg)
-  set(rt1_pkg_DEVEL_PREFIX /root/workspace/devel)
+  set(rt1_pkg_SOURCE_PREFIX /root/rt1_ros/src/rt1_pkg)
+  set(rt1_pkg_DEVEL_PREFIX /root/rt1_ros/devel)
   set(rt1_pkg_INSTALL_PREFIX "")
   set(rt1_pkg_PREFIX ${rt1_pkg_DEVEL_PREFIX})
 else()
   set(rt1_pkg_SOURCE_PREFIX "")
   set(rt1_pkg_DEVEL_PREFIX "")
-  set(rt1_pkg_INSTALL_PREFIX /root/workspace/install)
+  set(rt1_pkg_INSTALL_PREFIX /root/rt1_ros/install)
   set(rt1_pkg_PREFIX ${rt1_pkg_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(rt1_pkg_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/root/workspace/devel/include;/root/workspace/src/rt1_pkg/include " STREQUAL " ")
+if(NOT "/root/rt1_ros/devel/include;/root/rt1_ros/src/rt1_pkg/include " STREQUAL " ")
   set(rt1_pkg_INCLUDE_DIRS "")
-  set(_include_dirs "/root/workspace/devel/include;/root/workspace/src/rt1_pkg/include")
+  set(_include_dirs "/root/rt1_ros/devel/include;/root/rt1_ros/src/rt1_pkg/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/root/workspace/devel/include;/root/workspace/src/rt1_pkg/include " STRE
         message(FATAL_ERROR "Project 'rt1_pkg' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'rt1_pkg' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/workspace/src/rt1_pkg/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'rt1_pkg' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/rt1_ros/src/rt1_pkg/${idir}'.  ${_report}")
     endif()
     _list_append_unique(rt1_pkg_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/workspace/devel/lib;/root/workspace/devel/lib;/root/my_ros_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/rt1_ros/devel/lib;/root/rt1_ros/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

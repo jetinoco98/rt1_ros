@@ -55,6 +55,7 @@ class LastTargetRequest {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    # Request part (empty)
     
     `;
   }
@@ -129,6 +130,7 @@ class LastTargetResponse {
   static messageDefinition() {
     // Returns full string definition for message
     return `
+    # Response part
     float32 x
     float32 y
     

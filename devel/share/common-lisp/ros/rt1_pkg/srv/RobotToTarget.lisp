@@ -38,10 +38,10 @@
   "185aad6ed636881de3d9111fc76b7e00")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<RobotToTarget-request>)))
   "Returns full string definition for message of type '<RobotToTarget-request>"
-  (cl:format cl:nil "~%~%"))
+  (cl:format cl:nil "# Request part (empty)~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'RobotToTarget-request)))
   "Returns full string definition for message of type 'RobotToTarget-request"
-  (cl:format cl:nil "~%~%"))
+  (cl:format cl:nil "# Request part (empty)~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <RobotToTarget-request>))
   (cl:+ 0
 ))
@@ -187,10 +187,10 @@
   "185aad6ed636881de3d9111fc76b7e00")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<RobotToTarget-response>)))
   "Returns full string definition for message of type '<RobotToTarget-response>"
-  (cl:format cl:nil "float32 dx~%float32 dy~%float32 distance~%float32 average_vx~%float32 average_vy~%~%~%~%"))
+  (cl:format cl:nil "# Response part~%float32 dx~%float32 dy~%float32 distance~%float32 average_vx~%float32 average_vy~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'RobotToTarget-response)))
   "Returns full string definition for message of type 'RobotToTarget-response"
-  (cl:format cl:nil "float32 dx~%float32 dy~%float32 distance~%float32 average_vx~%float32 average_vy~%~%~%~%"))
+  (cl:format cl:nil "# Response part~%float32 dx~%float32 dy~%float32 distance~%float32 average_vx~%float32 average_vy~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <RobotToTarget-response>))
   (cl:+ 0
      4

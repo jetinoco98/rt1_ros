@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/src
+CMAKE_SOURCE_DIR = /root/rt1_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/build
+CMAKE_BINARY_DIR = /root/rt1_ros/build
 
 # Utility rule file for tf2_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/build: tf2_msgs_g
 .PHONY : assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 
 assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean:
-	cd /root/workspace/build/assignment_2_2023 && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /root/rt1_ros/build/assignment_2_2023 && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 
 assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend:
-	cd /root/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/src /root/workspace/src/assignment_2_2023 /root/workspace/build /root/workspace/build/assignment_2_2023 /root/workspace/build/assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/rt1_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/rt1_ros/src /root/rt1_ros/src/assignment_2_2023 /root/rt1_ros/build /root/rt1_ros/build/assignment_2_2023 /root/rt1_ros/build/assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : assignment_2_2023/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend
 

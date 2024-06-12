@@ -1,8 +1,8 @@
-# Install script for directory: /root/workspace/src/assignment_2_2023
+# Install script for directory: /root/rt1_ros/src/assignment_2_2023
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/root/rt1_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,65 +38,65 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/action" TYPE FILE FILES "/root/workspace/src/assignment_2_2023/action/Planning.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/action" TYPE FILE FILES "/root/rt1_ros/src/assignment_2_2023/action/Planning.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/msg" TYPE FILE FILES
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningAction.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningActionResult.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningGoal.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningResult.msg"
-    "/root/workspace/devel/share/assignment_2_2023/msg/PlanningFeedback.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningAction.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningActionGoal.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningActionResult.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningActionFeedback.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningGoal.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningResult.msg"
+    "/root/rt1_ros/devel/share/assignment_2_2023/msg/PlanningFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/cmake" TYPE FILE FILES "/root/workspace/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/cmake" TYPE FILE FILES "/root/rt1_ros/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/root/workspace/devel/include/assignment_2_2023")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/root/rt1_ros/devel/include/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/root/workspace/devel/share/roseus/ros/assignment_2_2023")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/root/rt1_ros/devel/share/roseus/ros/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/root/workspace/devel/share/common-lisp/ros/assignment_2_2023")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/root/rt1_ros/devel/share/common-lisp/ros/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/root/workspace/devel/share/gennodejs/ros/assignment_2_2023")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/root/rt1_ros/devel/share/gennodejs/ros/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/root/workspace/devel/lib/python3/dist-packages/assignment_2_2023")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/root/rt1_ros/devel/lib/python3/dist-packages/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/root/workspace/devel/lib/python3/dist-packages/assignment_2_2023")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/root/rt1_ros/devel/lib/python3/dist-packages/assignment_2_2023")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/workspace/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/rt1_ros/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/cmake" TYPE FILE FILES "/root/workspace/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/cmake" TYPE FILE FILES "/root/rt1_ros/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023/cmake" TYPE FILE FILES
-    "/root/workspace/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023Config.cmake"
-    "/root/workspace/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023Config-version.cmake"
+    "/root/rt1_ros/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023Config.cmake"
+    "/root/rt1_ros/build/assignment_2_2023/catkin_generated/installspace/assignment_2_2023Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023" TYPE FILE FILES "/root/workspace/src/assignment_2_2023/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/assignment_2_2023" TYPE FILE FILES "/root/rt1_ros/src/assignment_2_2023/package.xml")
 endif()
 
